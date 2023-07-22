@@ -21,7 +21,9 @@ function App() {
   return (
     <>
       <div
-        className=' absolute flex flex-col items-center justify-center place-self-center self-center md:rounded-xl md:border-2 md:border-white/30 p-12 text-white md:shadow-xl
+        className=' absolute flex flex-col items-center justify-center place-self-center self-center md:rounded-xl
+        md:border-l-2 md:border-t-2
+       md:border-white/30 p-12 text-white md:shadow-xl
         md:max-w-[74%] md:backdrop-blur-3xl md:backdrop-brightness-105 md:transition-all md:duration-300 md:hover:-translate-y-2 md:hover:shadow-2xl'
         id='quote-box'>
         <p>And I Quote</p>
