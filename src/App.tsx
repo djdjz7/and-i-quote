@@ -50,6 +50,7 @@ function App() {
           />
           <RoundedSymbolButton
             symbol='share'
+            id='share-button'
             onClick={() => {
               console.log('OK');
               return;
@@ -66,15 +67,17 @@ export default App;
 function RoundedSymbolButton({
   symbol,
   onClick,
+  id
 }: {
   symbol: string;
   onClick: () => void;
+  id: string;
 }) {
   return (
     <>
       <button
         className='flex h-10 w-10 items-center justify-center rounded-full border-2 border-white/30 shadow-md transition-all duration-150 hover:shadow-lg'
-        onClick={onClick}>
+        onClick={onClick} id={id}>
         <span className='material-symbols-outlined'>{symbol}</span>
       </button>
     </>
