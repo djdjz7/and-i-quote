@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 let flag: boolean = false;
@@ -67,7 +67,7 @@ function RoundedSymbolButton({
   onClick,
 }: {
   symbol: string;
-  onClick: React.MouseEvent<HTMLElement>;
+  onClick: () => void;
 }) {
   return (
     <>
