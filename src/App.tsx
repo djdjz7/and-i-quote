@@ -38,6 +38,7 @@ function App() {
         <div className='mt-4 flex items-center justify-center gap-4'>
           <RoundedSymbolButton
             symbol='refresh'
+            id='new-quote'
             onClick={() => {
               fetch('https://api.quotable.io/random')
                 .then((response) => response.json())
