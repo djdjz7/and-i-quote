@@ -21,8 +21,8 @@ function App() {
   return (
     <>
       <div
-        className=' absolute flex
-        max-w-[74%] flex-col items-center justify-center place-self-center self-center rounded-xl border-2 border-white/30 p-12 text-white shadow-xl backdrop-blur-3xl backdrop-brightness-105 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl'
+        className=' absolute flex flex-col items-center justify-center place-self-center self-center md:rounded-xl md:border-2 md:border-white/30 p-12 text-white md:shadow-xl
+        md:max-w-[74%] md:backdrop-blur-3xl md:backdrop-brightness-105 md:transition-all md:duration-300 md:hover:-translate-y-2 md:hover:shadow-2xl'
         id='quote-box'>
         <p>And I Quote</p>
         <div className='mt-4 flex justify-center'>
@@ -55,9 +55,6 @@ function App() {
           />
         </div>
       </div>
-      <span className='self-end m-2 text-white font-semibold text-center text-xs'>And I Quote by <a href='https://github.com/djdjz7/' target='_blank'>djdjz7</a><br />
-      API by <a href='https://github.com/lukePeavey/quota' target='_blank'>Luke Peavey</a>
-      </span>
     </>
   );
 }
