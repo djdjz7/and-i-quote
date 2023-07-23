@@ -21,18 +21,20 @@ function App() {
   return (
     <>
       <div
-        className=' absolute flex flex-col items-center justify-center place-self-center self-center md:rounded-xl
-        md:border-l-2 md:border-t-2
-       md:border-white/30 p-12 text-white md:shadow-xl
-        md:max-w-[74%] md:backdrop-blur-3xl md:backdrop-brightness-105 md:transition-all md:duration-300 md:hover:-translate-y-2 md:hover:shadow-2xl'
+        className=' absolute flex flex-col items-center justify-center place-self-center self-center p-12 max-w-[100%] m-0
+        text-white md:max-w-[74%] max-h-[100%]
+        md:rounded-xl md:border-l-2 md:border-t-2 md:border-white/30
+        md:shadow-xl md:backdrop-blur-3xl md:backdrop-brightness-105 md:transition-all md:duration-300 md:hover:-translate-y-2 md:hover:shadow-2xl'
         id='quote-box'>
-        <p>And I Quote</p>
+        <p className='self-start md:self-center transition-all duration-300'>And I Quote</p>
         <div className='mt-4 flex justify-center'>
-          <p className=' mr-4 align-bottom text-5xl font-bold self-start'>“</p>
-          <p className=' text-center text-4xl self-center font-semibold' id='text'>
+          <p className='max-h-[7%] mr-4 self-start align-bottom text-5xl font-bold'>“</p>
+          <p
+            className='text-center text-4xl font-semibold'
+            id='text'>
             {quote}
           </p>
-          <p className=' ml-4 text-5xl font-bold self-end'>”</p>
+          <p className=' ml-4 self-end text-5xl font-bold'>”</p>
         </div>
         <p className='mt-4 font-semibold' id='author'>
           {author}

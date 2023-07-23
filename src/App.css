@@ -5,3 +5,4 @@
 #root {
   @apply flex items-center justify-center bg-[url('./assets/bg.jpg')] bg-cover bg-center
 }
+::-webkit-scrollbar{display: none;}
