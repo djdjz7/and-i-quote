@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
     printWidth: 80, //单行长度
     tabWidth: 2, //缩进长度

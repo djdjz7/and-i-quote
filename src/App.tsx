@@ -21,20 +21,22 @@ function App() {
   return (
     <>
       <div
-        className=' absolute flex flex-col items-center justify-center place-self-center self-center p-12 max-w-[100%] m-0
-        text-white md:max-w-[74%] max-h-[100%]
+        className=' absolute m-0 flex max-h-[100%] max-w-[100%] flex-col items-center place-self-center self-center p-12
+        text-white md:max-w-[74%] md:justify-center
         md:rounded-xl md:border-l-2 md:border-t-2 md:border-white/30
         md:shadow-xl md:backdrop-blur-3xl md:backdrop-brightness-105 md:transition-all md:duration-300 md:hover:-translate-y-2 md:hover:shadow-2xl'
         id='quote-box'>
-        <p className='self-start md:self-center transition-all duration-300'>And I Quote</p>
+        <p className='self-start transition-all duration-300 md:self-center'>
+          And I Quote
+        </p>
         <div className='mt-4 flex justify-center'>
-          <p className='max-h-[7%] mr-4 self-start align-bottom text-5xl font-bold'>“</p>
-          <p
-            className='text-center text-4xl font-semibold'
-            id='text'>
+          <p className='mr-4 max-h-[7%] self-start align-bottom text-5xl font-semibold'>
+            “
+          </p>
+          <p className='text-center text-4xl font-semibold' id='text'>
             {quote}
           </p>
-          <p className=' ml-4 self-end text-5xl font-bold'>”</p>
+          <p className=' ml-4 self-end text-5xl font-semibold'>”</p>
         </div>
         <p className='mt-4 font-semibold' id='author'>
           {author}
